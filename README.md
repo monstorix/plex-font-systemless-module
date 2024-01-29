@@ -7,21 +7,22 @@
 > [!TIP]
 > 请仔细阅读并熟知此处介绍的 [使用方法](#使用方法)和原模板的[附加说明](#附加说明)。本模块已固定配置文件的字体名称，以尽可能避免大量文件重命名操作，因此原模板说明中的字体重命名复制等方法**不适用于此处**。
 
-## 已简易测试环境
+## 本地测试环境
 
 LineageOS/CrDroid - Android 14
 
 ## 模块当前支持的 Plex 语言
  | 文件前缀 | 支持语族 | 状态  | 
  | ------- | ---- | -------------------------------- |
- | IBMPlexSans | 拉丁文/希腊文/西里尔文（无衬线） | ✅ 已写入配置并支持 |
- | IBMPlexSansCondensed | 拉丁文/希腊文/西里尔文（无衬线窄体）| ✅ 已写入配置并支持|
+ |IBMPlexSans|拉丁文/希腊文/西里尔文（无衬线）| ✅ 已写入配置并支持 |
+ |IBMPlexSansCondensed| 拉丁文/希腊文/西里尔文（无衬线窄体）| ✅ 已写入配置并支持|
  |IBMPlexSerif|拉丁文/希腊文/西里尔文（衬线）|✅ 已写入配置并支持|
  |IBMPlexMono|拉丁文/希腊文/西里尔文（等宽）|✅ 已写入配置并支持|
  |IBMPlexSansArabic|阿拉伯字母（无衬线）|✅ 已写入配置并支持|
  |IBMPlexSansDevanagari|天城文（无衬线）|✅ 已写入配置并支持|
- |IBMPlexSansThai/ThaiLooped|泰文、泰文连写体（无衬线）|❌ 尚未支持|
- |IBMPlexSansHebrew|希伯来语（无衬线）|❌ 尚未支持|
+ |IBMPlexHebrew|希伯来文（无衬线）|✅ 已写入配置并支持|
+ |IBMPlexSansThai|泰文（无衬线）|✅ 已写入配置并支持|
+ |IBMPlexSansThaiLooped|泰文（无衬线）|❌ 尚未支持|
  |IBMPlexSansKR|朝鲜语/韩语（无衬线）|✅ 已写入配置并支持|
  |IBMPlexSansJP|日语（无衬线）|✅ 已写入配置并支持|
  |IBMPlexSansTC|繁体中文（无衬线）|✅ 已写入配置并支持|

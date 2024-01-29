@@ -1,26 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    WARNING: Parsing of this file by third-party apps is not supported. The
-    file, and the font files it refers to, will be renamed and/or moved out
-    from their respective location in the next Android release, and/or the
-    format or syntax of the file may change significantly. If you parse this
-    file for information about system fonts, do it at your own risk. Your
-    application will almost certainly break with the next major Android
-    release.
-
-    In this file, all fonts without names are added to the default list.
-    Fonts are chosen based on a match: full BCP-47 language tag including
-    script, then just language, and finally order (the first font containing
-    the glyph).
-
-    Order of appearance is also the tiebreaker for weight matching. This is
-    the reason why the 900 weights of Roboto precede the 700 weights - we
-    prefer the former when an 800 weight is requested. Since bold spans
-    effectively add 300 to the weight, this ensures that 900 is the bold
-    paired with the 500 weight, ensuring adequate contrast.
-
-    TODO(rsheeter) update comment; ordering to match 800 to 900 is no longer required
--->
 <familyset version="23">
     <!-- first font is default -->
     <!-- lxgw 注：首先调用空白字体，以提供度量及字重属性 -->
@@ -50,8 +28,6 @@
         <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSans-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSans-Bold.otf</font>
         <font weight="100" style="italic">IBMPlexSans-ThinItalic.otf</font>
         <font weight="200" style="italic">IBMPlexSans-ExtraLightItalic.otf</font>
         <font weight="300" style="italic">IBMPlexSans-LightItalic.otf</font>
@@ -60,125 +36,6 @@
         <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
         <font weight="600" style="italic">IBMPlexSans-SemiBoldItalic.otf</font>
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSans-BoldItalic.otf</font>
-    </family>
-    <!-- 衬线 -->
-    <family name="serif">
-        <font weight="100" style="normal">IBMPlexSerif-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSerif-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSerif-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSerif-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSerif-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSerif-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSerif-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSerif-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSerif-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSerif-Bold.otf</font>
-        <font weight="100" style="italic">IBMPlexSerif-ThinItalic.otf</font>
-        <font weight="200" style="italic">IBMPlexSerif-ExtraLightItalic.otf</font>
-        <font weight="300" style="italic">IBMPlexSerif-LightItalic.otf</font>
-        <font weight="400" style="italic">IBMPlexSerif-Italic.otf</font>
-        <font weight="450" style="italic">IBMPlexSerif-TextItalic.otf</font>
-        <font weight="500" style="italic">IBMPlexSerif-MediumItalic.otf</font>
-        <font weight="600" style="italic">IBMPlexSerif-SemiBoldItalic.otf</font>
-        <font weight="700" style="italic">IBMPlexSerif-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSerif-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSerif-BoldItalic.otf</font>
-    </family>
-    <!-- 无衬线紧缩体 -->
-    <family name="sans-serif-condensed">
-        <font weight="100" style="normal">IBMPlexSansCondensed-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSansCondensed-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSansCondensed-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSansCondensed-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSansCondensed-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSansCondensed-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSansCondensed-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSansCondensed-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansCondensed-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansCondensed-Bold.otf</font>
-        <font weight="100" style="italic">IBMPlexSansCondensed-ThinItalic.otf</font>
-        <font weight="200" style="italic">IBMPlexSansCondensed-ExtraLightItalic.otf</font>
-        <font weight="300" style="italic">IBMPlexSansCondensed-LightItalic.otf</font>
-        <font weight="400" style="italic">IBMPlexSansCondensed-Italic.otf</font>
-        <font weight="450" style="italic">IBMPlexSansCondensed-TextItalic.otf</font>
-        <font weight="500" style="italic">IBMPlexSansCondensed-MediumItalic.otf</font>
-        <font weight="600" style="italic">IBMPlexSansCondensed-SemiBoldItalic.otf</font>
-        <font weight="700" style="italic">IBMPlexSansCondensed-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSansCondensed-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSansCondensed-BoldItalic.otf</font>
-    </family>
-    <!-- 等宽 -->
-    <family name="monospace">
-        <font weight="100" style="normal">IBMPlexMono-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexMono-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexMono-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexMono-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexMono-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexMono-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexMono-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexMono-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexMono-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexMono-Bold.otf</font>
-        <font weight="100" style="italic">IBMPlexMono-ThinItalic.otf</font>
-        <font weight="200" style="italic">IBMPlexMono-ExtraLightItalic.otf</font>
-        <font weight="300" style="italic">IBMPlexMono-LightItalic.otf</font>
-        <font weight="400" style="italic">IBMPlexMono-Italic.otf</font>
-        <font weight="450" style="italic">IBMPlexMono-TextItalic.otf</font>
-        <font weight="500" style="italic">IBMPlexMono-MediumItalic.otf</font>
-        <font weight="600" style="italic">IBMPlexMono-SemiBoldItalic.otf</font>
-        <font weight="700" style="italic">IBMPlexMono-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexMono-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexMono-BoldItalic.otf</font>
-    </family>
-    <family lang="und-Deva" variant="elegant">
-        <font weight="100" style="normal">IBMPlexSansDevanagari-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSansDevanagari-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSansDevanagari-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSansDevanagari-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSansDevanagari-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSansDevanagari-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSansDevanagari-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-    </family>
-    <family lang="und-Deva" variant="compact">
-        <font weight="100" style="normal">IBMPlexSansDevanagari-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSansDevanagari-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSansDevanagari-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSansDevanagari-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSansDevanagari-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSansDevanagari-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSansDevanagari-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
-    </family>
-    <family lang="und-Arab" variant="elegant">
-        <font weight="100" style="normal">IBMPlexSansArabic-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSansArabic-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSansArabic-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSansArabic-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSansArabic-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSansArabic-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSansArabic-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSansArabic-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansArabic-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansArabic-Bold.otf</font>
-    </family>
-    <family lang="und-Arab" variant="compact">
-        <font weight="100" style="normal">IBMPlexSansArabic-Thin.otf</font>
-        <font weight="200" style="normal">IBMPlexSansArabic-ExtraLight.otf</font>
-        <font weight="300" style="normal">IBMPlexSansArabic-Light.otf</font>
-        <font weight="400" style="normal">IBMPlexSansArabic-Regular.otf</font>
-        <font weight="450" style="normal">IBMPlexSansArabic-Text.otf</font>
-        <font weight="500" style="normal">IBMPlexSansArabic-Medium.otf</font>
-        <font weight="600" style="normal">IBMPlexSansArabic-SemiBold.otf</font>
-        <font weight="700" style="normal">IBMPlexSansArabic-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansArabic-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansArabic-Bold.otf</font>
     </family>
     <!-- lxgw 注：调用静态 Roboto 兼容 Android 11 -->
     <family>
@@ -288,19 +145,56 @@
           <axis tag="wght" stylevalue="900"/>
         </font>
     </family>
-    <!-- lxgw 注：自定义字体部分（终）-->
     <!-- Note that aliases must come after the fonts they reference. -->
     <alias name="sans-serif-thin" to="sans-serif" weight="100"/>
     <alias name="sans-serif-light" to="sans-serif" weight="300"/>
     <alias name="sans-serif-medium" to="sans-serif" weight="500"/>
     <alias name="sans-serif-black" to="sans-serif" weight="900"/>
-    <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300"/>
-    <alias name="sans-serif-condensed-medium" to="sans-serif-condensed" weight="500"/>
-    <alias name="serif-bold" to="serif" weight="700"/>
     <alias name="arial" to="sans-serif"/>
     <alias name="helvetica" to="sans-serif"/>
     <alias name="tahoma" to="sans-serif"/>
     <alias name="verdana" to="sans-serif"/>
+    <!-- 无衬线窄体 -->
+    <family name="sans-serif-condensed">
+        <font weight="100" style="normal">IBMPlexSansCondensed-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansCondensed-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansCondensed-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansCondensed-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansCondensed-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansCondensed-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansCondensed-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansCondensed-Bold.otf</font>
+        <font weight="100" style="italic">IBMPlexSansCondensed-ThinItalic.otf</font>
+        <font weight="200" style="italic">IBMPlexSansCondensed-ExtraLightItalic.otf</font>
+        <font weight="300" style="italic">IBMPlexSansCondensed-LightItalic.otf</font>
+        <font weight="400" style="italic">IBMPlexSansCondensed-Italic.otf</font>
+        <font weight="450" style="italic">IBMPlexSansCondensed-TextItalic.otf</font>
+        <font weight="500" style="italic">IBMPlexSansCondensed-MediumItalic.otf</font>
+        <font weight="600" style="italic">IBMPlexSansCondensed-SemiBoldItalic.otf</font>
+        <font weight="700" style="italic">IBMPlexSansCondensed-BoldItalic.otf</font>
+    </family>
+    <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300"/>
+    <alias name="sans-serif-condensed-medium" to="sans-serif-condensed" weight="500"/>
+    <!-- 衬线 -->
+    <family name="serif">
+        <font weight="100" style="normal">IBMPlexSerif-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSerif-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSerif-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSerif-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSerif-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSerif-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSerif-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSerif-Bold.otf</font>
+        <font weight="100" style="italic">IBMPlexSerif-ThinItalic.otf</font>
+        <font weight="200" style="italic">IBMPlexSerif-ExtraLightItalic.otf</font>
+        <font weight="300" style="italic">IBMPlexSerif-LightItalic.otf</font>
+        <font weight="400" style="italic">IBMPlexSerif-Italic.otf</font>
+        <font weight="450" style="italic">IBMPlexSerif-TextItalic.otf</font>
+        <font weight="500" style="italic">IBMPlexSerif-MediumItalic.otf</font>
+        <font weight="600" style="italic">IBMPlexSerif-SemiBoldItalic.otf</font>
+        <font weight="700" style="italic">IBMPlexSerif-BoldItalic.otf</font>
+    </family>
+    <alias name="serif-bold" to="serif" weight="700"/>
     <alias name="times" to="serif"/>
     <alias name="times new roman" to="serif"/>
     <alias name="palatino" to="serif"/>
@@ -309,6 +203,25 @@
     <alias name="goudy" to="serif"/>
     <alias name="fantasy" to="serif"/>
     <alias name="ITC Stone Serif" to="serif"/>
+    <!-- 等宽 -->
+    <family name="monospace">
+        <font weight="100" style="normal">IBMPlexMono-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexMono-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexMono-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexMono-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexMono-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexMono-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexMono-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexMono-Bold.otf</font>
+        <font weight="100" style="italic">IBMPlexMono-ThinItalic.otf</font>
+        <font weight="200" style="italic">IBMPlexMono-ExtraLightItalic.otf</font>
+        <font weight="300" style="italic">IBMPlexMono-LightItalic.otf</font>
+        <font weight="400" style="italic">IBMPlexMono-Italic.otf</font>
+        <font weight="450" style="italic">IBMPlexMono-TextItalic.otf</font>
+        <font weight="500" style="italic">IBMPlexMono-MediumItalic.otf</font>
+        <font weight="600" style="italic">IBMPlexMono-SemiBoldItalic.otf</font>
+        <font weight="700" style="italic">IBMPlexMono-BoldItalic.otf</font>
+    </family>
     <alias name="sans-serif-monospace" to="monospace"/>
     <alias name="monaco" to="monospace"/>
     <alias name="serif-monospace" to="monospace"/>
@@ -336,16 +249,24 @@
     <alias name="source-sans-pro-semi-bold" to="source-sans-pro" weight="600"/>
     <!-- fallback fonts -->
     <family lang="und-Arab" variant="elegant">
-        <font weight="400" style="normal" postScriptName="NotoNaskhArabic">
-            NotoNaskhArabic-Regular.ttf
-        </font>
-        <font weight="700" style="normal">NotoNaskhArabic-Bold.ttf</font>
+        <font weight="100" style="normal">IBMPlexSansArabic-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansArabic-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansArabic-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansArabic-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansArabic-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansArabic-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansArabic-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansArabic-Bold.otf</font>
     </family>
     <family lang="und-Arab" variant="compact">
-        <font weight="400" style="normal" postScriptName="NotoNaskhArabicUI">
-            NotoNaskhArabicUI-Regular.ttf
-        </font>
-        <font weight="700" style="normal">NotoNaskhArabicUI-Bold.ttf</font>
+        <font weight="100" style="normal">IBMPlexSansArabic-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansArabic-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansArabic-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansArabic-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansArabic-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansArabic-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansArabic-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansArabic-Bold.otf</font>
     </family>
     <family lang="und-Ethi">
         <font weight="400" style="normal" postScriptName="NotoSansEthiopic-Regular">
@@ -386,27 +307,38 @@
     </family>
     <!-- lxgw 注：调用静态埃塞俄比亚文字体兼容 Android 11 （终）-->
     <family lang="und-Hebr">
-        <font weight="400" style="normal" postScriptName="NotoSansHebrew">
-            NotoSansHebrew-Regular.ttf
-        </font>
-        <font weight="700" style="normal">NotoSansHebrew-Bold.ttf</font>
-        <font weight="400" style="normal" fallbackFor="serif">NotoSerifHebrew-Regular.ttf</font>
-        <font weight="700" style="normal" fallbackFor="serif">NotoSerifHebrew-Bold.ttf</font>
+        <font weight="100" style="normal">IBMPlexSansHebrew-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansHebrew-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansHebrew-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansHebrew-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansHebrew-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansHebrew-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansHebrew-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansHebrew-Bold.otf</font>
     </family>
     <family lang="und-Thai" variant="elegant">
-        <font weight="400" style="normal" postScriptName="NotoSansThai">NotoSansThai-Regular.ttf
-        </font>
-        <font weight="700" style="normal">NotoSansThai-Bold.ttf</font>
+        <font weight="100" style="normal">IBMPlexSansThai-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansThai-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansThai-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansThai-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansThai-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansThai-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansThai-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansThai-Bold.otf</font>
         <font weight="400" style="normal" fallbackFor="serif" postScriptName="NotoSerifThai">
             NotoSerifThai-Regular.ttf
         </font>
         <font weight="700" style="normal" fallbackFor="serif">NotoSerifThai-Bold.ttf</font>
     </family>
     <family lang="und-Thai" variant="compact">
-        <font weight="400" style="normal" postScriptName="NotoSansThaiUI">
-            NotoSansThaiUI-Regular.ttf
-        </font>
-        <font weight="700" style="normal">NotoSansThaiUI-Bold.ttf</font>
+        <font weight="100" style="normal">IBMPlexSansThai-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansThai-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansThai-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansThai-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansThai-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansThai-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansThai-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansThai-Bold.otf</font>
     </family>
     <family lang="und-Armn">
         <font weight="400" style="normal" postScriptName="NotoSansArmenian-Regular">
@@ -478,67 +410,29 @@
         </font>
     </family>
     <family lang="und-Deva" variant="elegant">
-        <font weight="400" style="normal" postScriptName="NotoSansDevanagari-Regular">
-            NotoSansDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="400"/>
-        </font>
-        <font weight="500" style="normal" postScriptName="NotoSansDevanagari-Regular">
-            NotoSansDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="500"/>
-        </font>
-        <font weight="600" style="normal" postScriptName="NotoSansDevanagari-Regular">
-            NotoSansDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="600"/>
-        </font>
-        <font weight="700" style="normal" postScriptName="NotoSansDevanagari-Regular">
-            NotoSansDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="700"/>
-        </font>
-        <font weight="400" style="normal" fallbackFor="serif" postScriptName="NotoSerifDevanagari-Regular">NotoSerifDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="400"/>
-        </font>
-        <font weight="500" style="normal" fallbackFor="serif" postScriptName="NotoSerifDevanagari-Regular">NotoSerifDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="500"/>
-        </font>
-        <font weight="600" style="normal" fallbackFor="serif" postScriptName="NotoSerifDevanagari-Regular">NotoSerifDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="600"/>
-        </font>
-        <font weight="700" style="normal" fallbackFor="serif" postScriptName="NotoSerifDevanagari-Regular">NotoSerifDevanagari-VF.ttf
-            <axis tag="wght" stylevalue="700"/>
-        </font>
+        <font weight="100" style="normal">IBMPlexSansDevanagari-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansDevanagari-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansDevanagari-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansDevanagari-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansDevanagari-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansDevanagari-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansDevanagari-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
+        <font weight="800" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
+        <font weight="900" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
     </family>
     <family lang="und-Deva" variant="compact">
-        <font weight="400" style="normal" postScriptName="NotoSansDevanagariUI-Regular">
-            NotoSansDevanagariUI-VF.ttf
-            <axis tag="wght" stylevalue="400"/>
-        </font>
-        <font weight="500" style="normal" postScriptName="NotoSansDevanagariUI-Regular">
-            NotoSansDevanagariUI-VF.ttf
-            <axis tag="wght" stylevalue="500"/>
-        </font>
-        <font weight="600" style="normal" postScriptName="NotoSansDevanagariUI-Regular">
-            NotoSansDevanagariUI-VF.ttf
-            <axis tag="wght" stylevalue="600"/>
-        </font>
-        <font weight="700" style="normal" postScriptName="NotoSansDevanagariUI-Regular">
-            NotoSansDevanagariUI-VF.ttf
-            <axis tag="wght" stylevalue="700"/>
-        </font>
+        <font weight="100" style="normal">IBMPlexSansDevanagari-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansDevanagari-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansDevanagari-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansDevanagari-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansDevanagari-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansDevanagari-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansDevanagari-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
+        <font weight="800" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
+        <font weight="900" style="normal">IBMPlexSansDevanagari-Bold.otf</font>
     </family>
-    <!-- lxgw 注：调用静态天城文（用以拼写印地语）字体兼容 Android 11 -->
-    <family lang="und-Deva" variant="elegant">
-        <font weight="400" style="normal">NotoSansDevanagari-Regular.otf</font>
-        <font weight="500" style="normal">NotoSansDevanagari-Medium.otf</font>
-        <font weight="700" style="normal">NotoSansDevanagari-Bold.otf</font>
-        <font weight="400" style="normal" fallbackFor="serif">NotoSerifDevanagari-Regular.ttf</font>
-        <font weight="700" style="normal" fallbackFor="serif">NotoSerifDevanagari-Bold.ttf</font>
-    </family>
-    <family lang="und-Deva" variant="compact">
-        <font weight="400" style="normal">NotoSansDevanagariUI-Regular.otf</font>
-        <font weight="500" style="normal">NotoSansDevanagariUI-Medium.otf</font>
-        <font weight="700" style="normal">NotoSansDevanagariUI-Bold.otf</font>
-    </family>
-    <!-- lxgw 注：调用静态天城文（用以拼写印地语）字体兼容 Android 11 （终）-->
     <!-- All scripts of India should come after Devanagari, due to shared
          danda characters.
     -->
@@ -1461,8 +1355,6 @@
         <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSans-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSans-Bold.otf</font>
         <font weight="100" style="italic">IBMPlexSans-ThinItalic.otf</font>
         <font weight="200" style="italic">IBMPlexSans-ExtraLightItalic.otf</font>
         <font weight="300" style="italic">IBMPlexSans-LightItalic.otf</font>
@@ -1470,8 +1362,6 @@
         <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
         <font weight="600" style="italic">IBMPlexSans-SemiBoldItalic.otf</font>
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
     <family lang="zh-Hant">
         <font weight="100" style="normal">IBMPlexSans-Thin.otf</font>
@@ -1481,8 +1371,6 @@
         <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSans-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSans-Bold.otf</font>
         <font weight="100" style="italic">IBMPlexSans-ThinItalic.otf</font>
         <font weight="200" style="italic">IBMPlexSans-ExtraLightItalic.otf</font>
         <font weight="300" style="italic">IBMPlexSans-LightItalic.otf</font>
@@ -1490,8 +1378,6 @@
         <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
         <font weight="600" style="italic">IBMPlexSans-SemiBoldItalic.otf</font>
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
     <family lang="ja">
         <font weight="100" style="normal">IBMPlexSans-Thin.otf</font>
@@ -1501,8 +1387,6 @@
         <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSans-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSans-Bold.otf</font>
         <font weight="100" style="italic">IBMPlexSans-ThinItalic.otf</font>
         <font weight="200" style="italic">IBMPlexSans-ExtraLightItalic.otf</font>
         <font weight="300" style="italic">IBMPlexSans-LightItalic.otf</font>
@@ -1510,8 +1394,6 @@
         <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
         <font weight="600" style="italic">IBMPlexSans-SemiBoldItalic.otf</font>
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
     <family lang="ko">
         <font weight="100" style="normal">IBMPlexSans-Thin.otf</font>
@@ -1521,8 +1403,6 @@
         <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSans-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSans-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSans-Bold.otf</font>
         <font weight="100" style="italic">IBMPlexSans-ThinItalic.otf</font>
         <font weight="200" style="italic">IBMPlexSans-ExtraLightItalic.otf</font>
         <font weight="300" style="italic">IBMPlexSans-LightItalic.otf</font>
@@ -1530,8 +1410,6 @@
         <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
         <font weight="600" style="italic">IBMPlexSans-SemiBoldItalic.otf</font>
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="800" style="italic">IBMPlexSans-BoldItalic.otf</font>
-        <font weight="900" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
     <!-- lxgw 注：其次调用各自语言字体 -->
     <family lang="zh-Hans">
@@ -1543,8 +1421,6 @@
         <font weight="500" style="normal">IBMPlexSansTC-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansTC-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansTC-Bold.otf</font>
     </family>
     <family lang="zh-Hant">
         <font weight="100" style="normal">IBMPlexSansTC-Thin.otf</font>
@@ -1555,8 +1431,6 @@
         <font weight="500" style="normal">IBMPlexSansTC-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansTC-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansTC-Bold.otf</font>
     </family>
     <family lang="ja">
         <font weight="100" style="normal">IBMPlexSansJP-Thin.otf</font>
@@ -1567,8 +1441,6 @@
         <font weight="500" style="normal">IBMPlexSansJP-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansJP-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansJP-Bold.otf</font>
     </family>
     <family lang="ko">
         <font weight="100" style="normal">IBMPlexSansKR-Thin.otf</font>
@@ -1579,8 +1451,6 @@
         <font weight="500" style="normal">IBMPlexSansKR-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansKR-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansKR-Bold.otf</font>
     </family>
     <!-- lxgw 注：调用其余字体 -->
     <family lang="zh-Hans">
@@ -1592,8 +1462,6 @@
         <font weight="500" style="normal">IBMPlexSansJP-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansJP-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansJP-Bold.otf</font>
     </family>
     <family lang="zh-Hant">
         <font weight="100" style="normal">IBMPlexSansJP-Thin.otf</font>
@@ -1604,8 +1472,6 @@
         <font weight="500" style="normal">IBMPlexSansJP-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansJP-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansJP-Bold.otf</font>
     </family>
     <family lang="ja">
         <font weight="100" style="normal">IBMPlexSansKR-Thin.otf</font>
@@ -1616,8 +1482,6 @@
         <font weight="500" style="normal">IBMPlexSansKR-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansKR-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansKR-Bold.otf</font>
     </family>
     <family lang="ko">
         <font weight="100" style="normal">IBMPlexSansJP-Thin.otf</font>
@@ -1628,8 +1492,6 @@
         <font weight="500" style="normal">IBMPlexSansJP-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansJP-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansJP-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansJP-Bold.otf</font>
     </family>
     <family lang="zh-Hans">
         <font weight="100" style="normal">IBMPlexSansKR-Thin.otf</font>
@@ -1640,8 +1502,6 @@
         <font weight="500" style="normal">IBMPlexSansKR-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansKR-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansKR-Bold.otf</font>
     </family>
     <family lang="zh-Hant">
         <font weight="100" style="normal">IBMPlexSansKR-Thin.otf</font>
@@ -1652,8 +1512,6 @@
         <font weight="500" style="normal">IBMPlexSansKR-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansKR-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansKR-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansKR-Bold.otf</font>
     </family>
     <family lang="ja">
         <font weight="100" style="normal">IBMPlexSansTC-Thin.otf</font>
@@ -1664,8 +1522,6 @@
         <font weight="500" style="normal">IBMPlexSansTC-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansTC-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansTC-Bold.otf</font>
     </family>
     <family lang="ko">
         <font weight="100" style="normal">IBMPlexSansTC-Thin.otf</font>
@@ -1676,8 +1532,6 @@
         <font weight="500" style="normal">IBMPlexSansTC-Medium.otf</font>
         <font weight="600" style="normal">IBMPlexSansTC-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="800" style="normal">IBMPlexSansTC-Bold.otf</font>
-        <font weight="900" style="normal">IBMPlexSansTC-Bold.otf</font>
     </family>
     <!-- lxgw 注：自定义 CJK 字体 （终）-->
     <!-- lxgw 注：后垫 Android 自带思源黑体，确保 CJK 不缺字 -->
