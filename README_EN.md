@@ -4,12 +4,12 @@ This project attempts to apply IBM Plex fonts to the system global interface in 
 [中文介绍](README.md)
 
 > [!WARNING]
-> This module is experimental and the related code has only been tested a little. There may be unintended problems on some devices, including but not limited to causing the system can not start normally, lag, display abnormalities, etc. **Please consider carefully before operation, and should always backup important data.System failure (including card boot animation, abnormal function, etc.) or abnormal effect caused by improper operation has nothing to do with the author of the module or template.**
+> This module is experimental and the related code has only been tested a little. There may be unintended problems on some devices, including but not limited to causing the system can not start normally, lag, display abnormalities, etc. **Please consider carefully before operation, and should always backup important data. System failure (including stuck on boot, abnormal function, etc.) or abnormal effect caused by improper operation has nothing to do with the author of the module or template.**
 
 ## Module Support Status
 ### Tested on
-LineageOS/CrDroid - Android 14 / KernelSU
-Status (self test): Native/System Interface is in effect (with Sans and Monospace). **Browser Apps are not in effect currently.**
+LineageOS/CrDroid - Android 14 / KernelSU<br>
+Status (self test): <br>Native/System Interface is in effect (with Sans and Monospace). <br>**Pages in Webview are not fully in effect currently**
 
 Not tested on other ROM.
 
@@ -31,7 +31,7 @@ Not tested on other ROM.
  |IBMPlexSansSC|Simplified Chinese (sans-serif)|❌ Not Released Yet|
 
 > [!NOTE]
-> For the CJK Users:
+> For the CJK Users:<br>
 > As of [version 6.4](https://github.com/ibm/plex/releases/latest) at the end of January 2024, the IBM Plex fonts only include preliminary Traditional Chinese support, Simplified Chinese support is still a few weeks away. There are still some rendering issues with the initial Traditional Chinese fonts, waiting for upstream updates.
 > The configuration file of this module is currently using Traditional Chinese glyphs to temporarily replace the Simplified Chinese positions, and following the Noto complementary mechanism in the original font template to ensure text support. Simplified Chinese glyphs support will be in place after IBM updates the fonts.
 
@@ -41,7 +41,7 @@ Not tested on other ROM.
 
 1. Download the latest version of the OpenType font package (version should be greater than or equal to 6.4) from the [IBM Plex repository](https://github.com/ibm/plex/releases/latest).
 2. Click **Code > Download ZIP**, Download the base module file and extract.
-3. Referring to the support table above, extract **all** otf font files for **supported languages** and **flatten** them into the `/system/fonts` folder of the module. **No need to create subfolders or change/delete other files, especially the EmptyFonts and Roboto empty font files already included. **
+3. Referring to the support table above, extract **all** otf font files for **supported languages** and place them into the `/system/fonts` folder of the module. **No need to create subfolders or change/delete other files, especially the EmptyFonts and Roboto empty font files already included.**
 
 The final `/system/fonts` catalogue structure should refer to the following format:
 ```
@@ -58,7 +58,7 @@ The final `/system/fonts` catalogue structure should refer to the following form
 
 ## Additional
 
-This module is based on the [CJK Fonts Magisk Module Template](https://github.com/lxgw/advanced-cjk-font-magisk-module-template) released by LXGW with modifications. Therefore, the related compatibility issues are common with this template, please also read the documentation in the template repository carefully. Especially the [Notes](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) and [Compatibility Adjustment](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%B0%83%E6%95%B4-%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83) part.
+This module is based on the [CJK Fonts Magisk Module Template](https://github.com/lxgw/advanced-cjk-font-magisk-module-template) released by LXGW with modifications. Therefore, the related compatibility issues are shared between the modules based on this template, please also read the documentation in the template repository carefully. Especially the [Notes](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) and [Compatibility Adjustment](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%B0%83%E6%95%B4-%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83) part.
 
 For partial CJK extended character support, use [Plangothic Glyphs Completion Module](https://github.com/Cccc-owo/Another-Plangothic-magisk-module) packed by Cccc-owo.
 

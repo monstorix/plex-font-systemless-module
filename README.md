@@ -8,8 +8,8 @@
 
 ## 模块支持状态
 ### 本地已测试环境
-LineageOS/CrDroid - Android 14 / KernelSU
-状态（自测）：原生/系统界面已生效（无衬线/等宽），**网页类应用（如微信公众号内文、浏览器网页等）当前未生效**
+LineageOS/CrDroid - Android 14 / KernelSU<br>
+状态（自测）：<br>原生/系统界面已生效（无衬线/等宽）<br>**Webview 驱动的页面（如公众号内文等）当前未完全生效。**
 
 其他ROM暂未测试
 
