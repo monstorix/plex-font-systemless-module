@@ -8,9 +8,8 @@
 
 ## 模块支持状态
 ### 本地已测试环境
-LineageOS/CrDroid - Android 14 / KernelSU<br>
-状态（自测）：<br>原生/系统界面已生效（无衬线/等宽）<br>**Webview 驱动的页面（如公众号内文等）当前未完全生效。**
-
+Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br>
+当前状态：<br>原生/系统界面已生效（无衬线/等宽）<br>**由于 Android 12 以上的新字体渲染机制，Webview 驱动的页面（如Flutter应用、公众号内文等）当前未完全生效。目前暂无有效解决方法**
 其他ROM暂未测试
 
 ### 当前支持的语言变体
@@ -31,9 +30,9 @@ LineageOS/CrDroid - Android 14 / KernelSU<br>
  |IBMPlexSansSC|简体中文（无衬线）|❌ 字体尚未发布|
 
 > [!NOTE]
-> 中日韩文用户敬请注意：
-> 截至2024年1月末的 [6.4 版本](https://github.com/ibm/plex/releases/latest)，IBM Plex 字体暂仅加入初步的繁体中文支持，简体中文支持仍需数周时间。初版的繁体中文字形仍有部分渲染问题，需等待上游更新。
-> 本模块配置文件目前使用繁体中文字形临时替补简体中文位置，并沿用原字体模板中的Noto补字机制确保文字支持。待 IBM 更新字体后，此处会跟进替换为简体中文字形。
+> 中日韩文用户敬请注意：<br>
+> 截至2024年1月末的 [6.4 版本](https://github.com/ibm/plex/releases/latest)，IBM Plex 字体暂仅加入初步的繁体中文支持，简体中文支持仍需数周时间。初版的繁体中文字库仍有部分字符存在行高、字形不一致等问题，暂不推荐日常使用。
+> 本模块配置文件目前使用繁体中文字形临时替补简体中文位置，并沿用原字体模板中的Noto补字机制确保文字支持，当前直接安装会看到混合字形。待 IBM 更新字体后，此处会跟进替换为简体中文字形。
 
 ## 手动安装方法
 > [!TIP]
@@ -60,7 +59,7 @@ LineageOS/CrDroid - Android 14 / KernelSU<br>
 
 本模块基于落霞孤鹜发布的[CJK 字体 Magisk 模块模板 高级版](https://github.com/lxgw/advanced-cjk-font-magisk-module-template) 改动。兼容性问题等与此模板共通，因此请仔细阅读原模板文档，尤其是[注意事项](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)以及[兼容性调整](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%B0%83%E6%95%B4-%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83)部分。
 
-对于部分中日韩扩展字符支持，可配合使用 Cccc-owo 制作的 [遍黑体外挂补全模块](https://github.com/Cccc-owo/Another-Plangothic-magisk-module)。
+对于更大范围的中日韩字符支持，可配合使用[遍黑体字库](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic-Project)或[天珩全字库](http://cheonhyeong.com/Simplified/download.html)，原模板配置文件已为这两款字体预留字符回退支持，将字体下载后一并放入`/system/fonts`文件夹即可。
 
 ## 引用
 
