@@ -4,14 +4,15 @@ This project attempts to apply IBM Plex fonts to the system global interface in 
 [中文介绍](README.md)
 
 > [!WARNING]
-> This module is experimental and the related code has only been barely tested. There may be unintended problems on some devices, including but not limited to causing the system can not start normally, lag, display abnormalities, etc. **Please consider carefully before operation, and should always backup important data. System failure (including stuck on boot, abnormal function, etc.) or abnormal effect caused by improper operation has nothing to do with the author of the module or template.**
+> This module is experimental and the related code has only been barely tested, **it's not recommended to use as daily drive**. There may be unintended problems on some devices, including but not limited to causing the system can not start normally, lag, display abnormalities, etc. **Please consider carefully before operation, and should always backup important data. System failure (including stuck on boot, abnormal function, etc.) or abnormal effect caused by improper operation has nothing to do with the author of the module or template.**
 
 ## Module Support Status
 ### Tested on
-Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br>
-Status: <br>Native/System Interface is in effect (with Sans and Monospace). <br>**Pages in Webview are not fully in effect currently due to the new font rendering method on Android 12+**
-
-Not tested on other ROM.
+Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
+Status: <br>Native/System Interface is in effect (with Sans and Monospace). <br>**Pages in Webview are not fully in effect currently due to the new font rendering method on Android 12+**<br>
+Not tested on other ROM.<br><br>
+> [!NOTE]
+>For Chromium/Android Webview based browsers, it may be necessary to disable the Root Hide function, such as Magisk Hide/DenyList or KernelSU's "Uninstall Module" function, in order to make the font rules take effect on the webpage.<br>For Firefox Mobile and other derivatives, since the GeckoView engine has not yet been adapted to the system's font fallback mechanism, the module can only replace its interface fonts normally, and the webpage fonts will be messed up when the Root Hide is disabled, which is an upstream problem of the browser.
 
 ### Supported Variants
  | Prefix | Languages | Status  |
@@ -24,7 +25,7 @@ Not tested on other ROM.
  |IBMPlexSansDevanagari|Devanagari (sans-serif)|✅ Written in Config|
  |IBMPlexHebrew|Hebrew (sans-serif)|✅ Written in Config|
  |IBMPlexSansThai|Thai (sans-serif)|✅ Written in Config|
- |IBMPlexSansThaiLooped|Thai Looped (sans-serif)|❌ Not Written Yet|
+ |IBMPlexSansThaiLooped|Thai Looped (sans-serif)|✅ Written in Config as optional,<br> enable if needed|
  |IBMPlexSansKR|Korean (sans-serif)|✅ Written in Config|
  |IBMPlexSansJP|Japanese (sans-serif)|✅ Written in Config|
  |IBMPlexSansTC|Traditional Chinese (sans-serif)|✅ Written in Config|

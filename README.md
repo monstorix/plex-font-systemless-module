@@ -4,13 +4,15 @@
 [English Instruction](README_EN.md)
 
 > [!WARNING] 
-> 此模块为实验性，相关替换代码仅经过少量测试。在部分设备上可能存在非预期问题，包括但不限于导致系统无法正常启动、卡顿、显示异常等，请在操作前审慎考虑，同时应时刻备份重要数据。因操作不当导致的系统故障（包括卡开机动画、功能异常等）或效果异常与模块或模板作者无关。
+> 此模块为实验性，相关替换代码仅经过少量测试，**暂不推荐日常使用**。在部分设备上可能存在非预期问题，包括但不限于导致系统无法正常启动、卡顿、显示异常等，**请在操作前审慎考虑，同时应时刻备份重要数据。因操作不当导致的系统故障（包括卡开机动画、功能异常等）或效果异常与模块或模板作者无关**。
 
 ## 模块支持状态
 ### 本地已测试环境
-Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br>
-当前状态：<br>原生/系统界面已生效（无衬线/等宽）<br>**由于 Android 12 以上的新字体渲染机制，Webview 驱动的页面（如Flutter应用、公众号内文等）当前未完全生效。目前暂无有效解决方法**
-其他ROM暂未测试
+Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
+当前状态：<br>原生/系统界面已生效（无衬线/等宽）<br>**由于 Android 12 以上的新字体渲染机制，Webview 驱动的页面（如Flutter应用、公众号内文等）默认情况下未完全生效。**<br>
+其他ROM暂未测试<br><br>
+> [!NOTE]
+> 对于基于 Chromium/Android Webview 的浏览器应用，可能需要对其单独在设置中停用 Root 隐藏功能, 如Magisk Hide/DenyList或KernelSU的“卸载模块”功能，才能让字体规则在网页中生效。<br>对于 Firefox 移动版及其他衍生版本，由于 GeckoView 引擎暂未适配系统字体回退机制，模块只能正常替换其界面字体，对其取消 Root 隐藏时，网页字体则会出现字形错乱等问题，此为浏览器上游问题。
 
 ### 当前支持的语言变体
  | 文件前缀 | 支持语族 | 状态  | 
@@ -23,7 +25,7 @@ Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br>
  |IBMPlexSansDevanagari|天城文（无衬线）|✅ 已写入配置|
  |IBMPlexHebrew|希伯来文（无衬线）|✅ 已写入配置|
  |IBMPlexSansThai|泰文（无衬线）|✅ 已写入配置|
- |IBMPlexSansThaiLooped|泰文（无衬线）|❌ 尚未写入|
+ |IBMPlexSansThaiLooped|泰文（无衬线）|✅ 作为可选项写入配置，<br>可按需启用|
  |IBMPlexSansKR|朝鲜语/韩语（无衬线）|✅ 已写入配置|
  |IBMPlexSansJP|日语（无衬线）|✅ 已写入配置|
  |IBMPlexSansTC|繁体中文（无衬线）|✅ 已写入配置|
