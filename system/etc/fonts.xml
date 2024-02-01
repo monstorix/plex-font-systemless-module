@@ -381,6 +381,29 @@
     </family>
     <alias name="Noto Sans Thai" to="sans-serif"/>
     <alias name="Noto Serif Thai" to="sans-serif"/>
+    <!-- Optional Thai Looped conf, disable above config first if need use -->
+    <!--<family lang="und-Thai" variant="elegant">
+        <font weight="100" style="normal">IBMPlexSansThaiLooped-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansThaiLooped-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansThaiLooped-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansThaiLooped-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansThaiLooped-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansThaiLooped-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansThaiLooped-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansThaiLooped-Bold.otf</font>
+    </family>
+    <family lang="und-Thai" variant="compact">
+        <font weight="100" style="normal">IBMPlexSansThaiLooped-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansThaiLooped-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansThaiLooped-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansThaiLooped-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansThaiLooped-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansThaiLooped-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansThaiLooped-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansThaiLooped-Bold.otf</font>
+    </family>
+    <alias name="Noto Sans Thai" to="sans-serif"/>
+    <alias name="Noto Serif Thai" to="sans-serif"/>-->
     <family lang="und-Armn">
         <font weight="400" style="normal" postScriptName="NotoSansArmenian-Regular">
             NotoSansArmenian-VF.ttf
