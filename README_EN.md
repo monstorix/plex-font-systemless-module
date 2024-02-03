@@ -12,7 +12,7 @@ Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
 Status: <br>Native/System Interface is in effect (with Sans and Monospace). <br>**Pages in Webview are not fully in effect currently due to the new font rendering method on Android 12+**<br>
 Not tested on other ROM.<br><br>
 > [!NOTE]
->For Chromium/Android Webview based browsers, it may be necessary to disable the Root Hide function, such as Magisk Hide/DenyList or KernelSU's "Uninstall Module" function, in order to make the font rules take effect on the webpage.<br>For Firefox Mobile and other derivatives, since the GeckoView engine has not yet been adapted to the system's font fallback mechanism, the module can only replace its interface fonts normally, and the webpage fonts will be messed up when the Root Hide is disabled, which is an upstream problem of the browser.
+>For Chromium/Android Webview based browsers, it may be necessary to disable the Root Hide function, such as Magisk Hide/DenyList or KernelSU's "Uninstall Module" function, in order to make the font rules take effect on the webpage.<br>For Firefox Mobile and its derivatives, since the GeckoView engine has not yet been adapted to the system's font fallback mechanism, the module can only replace its interface fonts normally, and the webpage fonts will be messed up when the Root Hide is disabled, which is an upstream problem of the browser.
 
 ### Supported Variants
  | Prefix | Languages | Status  |
@@ -29,39 +29,25 @@ Not tested on other ROM.<br><br>
  |IBMPlexSansKR|Korean (sans-serif)|✅ Written in Config|
  |IBMPlexSansJP|Japanese (sans-serif)|✅ Written in Config|
  |IBMPlexSansTC|Traditional Chinese (sans-serif)|✅ Written in Config|
- |IBMPlexSansSC|Simplified Chinese (sans-serif)|❌ Not Released Yet|
+ |IBMPlexSansSC|Simplified Chinese (sans-serif)|❌ Not Released Yet, Config Reserved|
 
 > [!NOTE]
 > For the CJK Users:<br>
 > As of [version 6.4](https://github.com/ibm/plex/releases/latest) at the end of January 2024, the IBM Plex fonts only include preliminary Traditional Chinese support, Simplified Chinese support is still a few weeks away. There are still some rendering issues such as different line height with the initial Traditional Chinese fonts. It's not recommended for daily use as of now.
 > The configuration file of this module is currently using Traditional Chinese glyphs to temporarily replace the Simplified Chinese positions, and following the complementary mechanism in the original font template to ensure text support. Currently, some glyphs are mixed with Noto Sans. Simplified Chinese glyphs support will be in place after IBM updates the fonts.
 
-## Manual Installation
+## Installation
 > [!TIP]
-> Please read and familiarise yourself with the introduction here and the [additional instructions](#Additional) of the original template. This module has fixed the font names in the configuration file to avoid as many file renaming operations as possible, so the methods of font renaming, copying etc. in the original template description **do not apply here**.
+> Please also read the [additional instructions](#Additional) of the original template. This module has fixed the font names in the configuration file to avoid as many file renaming operations as possible, so the methods of font renaming, copying etc. in the original template description **do not apply here**.
 
-1. Download the latest version of the OpenType font package (version should be greater than or equal to 6.4) from the [IBM Plex repository](https://github.com/ibm/plex/releases/latest).
-2. Click **Code > Download ZIP**, Download the base module file and extract.
-3. Referring to the support table above, extract **all** otf font files for **supported languages** and place them into the `/system/fonts` folder of the module. **No need to create subfolders or change/delete other files, especially the EmptyFonts and Roboto empty font files already included.**
-
-The final `/system/fonts` catalogue structure should refer to the following format:
-```
-├── META-INF
-├── system
-│   ├── fonts
-│   │   ├── IBMPlexSans-***.otf
-│   │   ├── IBMPlexSerif-***.otf
-│   │   ├── IBMPlexSansTC-***.otf
-│   │   ├── ....
-```
-
-4. Re-compress to zip, use Magisk/KernelSU to install the module and reboot.
+Download the Module.zip file from the Release, install within Magisk or KernelSU Manager, then reboot.<br>
+To change the parameters, extract and edit `/system/etc/font.xml` in the module, and then copy it and overwrite the `font_base.xml` in the directory `/system/etc` and `/system/system_ext/etc`.
 
 ## Additional
 
-This module is based on the [CJK Fonts Magisk Module Template](https://github.com/lxgw/advanced-cjk-font-magisk-module-template) released by LXGW with modifications. Therefore, the related compatibility issues are shared between the modules based on this template, please also read the documentation in the template repository carefully. Especially the [Notes](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) and [Compatibility Adjustment](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%B0%83%E6%95%B4-%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83) part.
+This module is based on the [CJK Fonts Magisk Module Template](https://github.com/lxgw/advanced-cjk-font-magisk-module-template) released by LXGW with modifications. Therefore, the related compatibility issues are shared between the modules based on this template, please also read the documentation in the template repository carefully. Especially the [Notes](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) and [Compatibility Adjustment](https://github.com/lxgw/advanced-cjk-font-magisk-module-template#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%B0%83%E6%95%B4-%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83) part, which documents a few compatibility methods for OEM ROMs such as MIUI/ColorOS etc.
 
-For extended CJK character support, two more fonts can be used: [Plangothic (sans-serif)](https://github.com/Cccc-owo/Another-Plangothic-magisk-module) or [Tianheng-Tshyn (serif)](http://cheonhyeong.com/English/download.html). The original template has reserved the fallback support for these two fonts. Just download and put the ttf files in `/system/fonts` and it's good to go.
+For extended CJK character support, two more fonts can be used: [Plangothic (sans-serif)](https://github.com/Cccc-owo/Another-Plangothic-magisk-module) or [Tianheng-Tshyn (serif)](http://cheonhyeong.com/English/download.html). The original template has reserved the fallback support for these two fonts. Just download and put the ttf files in module's `/system/fonts` directory and it's good to go.
 
 ## Refrences
 

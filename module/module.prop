@@ -1,7 +1,7 @@
 id=PlexMaskMod
 name=IBM Plex 字体替换
 version=0.4-test
-versionCode=3
-author=Monstorix
-description=将 Android 字体替换为 IBM Plex （测试）
-#updateJson=<TBD>
+versionCode=19
+author=Monstorix & lxgw & IBM
+description=将 Android 字体替换为 IBM Plex
+updateJson=https://github.com/monstorix/plex-font-systemless-module/raw/main/update.json
