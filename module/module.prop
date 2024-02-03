@@ -4,3 +4,4 @@ version=0.4-test
 versionCode=3
 author=Monstorix
 description=将 Android 字体替换为 IBM Plex （测试）
+#updateJson=<TBD>

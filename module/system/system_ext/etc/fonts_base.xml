@@ -1481,6 +1481,17 @@
         <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
     <!-- 注：CJK 调用各自语言字体/ CJK Variants Following -->
+    <!-- Reserved for Simplified Chinese Font -->
+    <!--<family lang="zh-Hans">
+        <font weight="100" style="normal">IBMPlexSansSC-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansSC-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansSC-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansSC-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansSC-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansSC-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansSC-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansSC-Bold.otf</font>
+    </family>-->
     <family lang="zh-Hans">
         <font weight="100" style="normal">IBMPlexSansTC-Thin.otf</font>
         <font weight="200" style="normal">IBMPlexSansTC-ExtraLight.otf</font>
@@ -1582,6 +1593,26 @@
         <font weight="600" style="normal">IBMPlexSansKR-SemiBold.otf</font>
         <font weight="700" style="normal">IBMPlexSansKR-Bold.otf</font>
     </family>
+    <!--<family lang="ja">
+        <font weight="100" style="normal">IBMPlexSansSC-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansSC-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansSC-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansSC-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansSC-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansSC-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansSC-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansSC-Bold.otf</font>
+    </family>
+    <family lang="ko">
+        <font weight="100" style="normal">IBMPlexSansSC-Thin.otf</font>
+        <font weight="200" style="normal">IBMPlexSansSC-ExtraLight.otf</font>
+        <font weight="300" style="normal">IBMPlexSansSC-Light.otf</font>
+        <font weight="400" style="normal">IBMPlexSansSC-Regular.otf</font>
+        <font weight="450" style="normal">IBMPlexSansSC-Text.otf</font>
+        <font weight="500" style="normal">IBMPlexSansSC-Medium.otf</font>
+        <font weight="600" style="normal">IBMPlexSansSC-SemiBold.otf</font>
+        <font weight="700" style="normal">IBMPlexSansSC-Bold.otf</font>
+    </family>-->
     <family lang="ja">
         <font weight="100" style="normal">IBMPlexSansTC-Thin.otf</font>
         <font weight="200" style="normal">IBMPlexSansTC-ExtraLight.otf</font>
@@ -1865,6 +1896,9 @@
     </family>
     <family>
         <font weight="400" style="normal">TH-Tshyn-P1.ttf</font>
+    </family>
+    <family>
+        <font weight="400" style="normal">TH-Tshyn-P16.ttf</font>
     </family>
     <family>
         <font weight="400" style="normal">TH-Tshyn-P2.ttf</font>
