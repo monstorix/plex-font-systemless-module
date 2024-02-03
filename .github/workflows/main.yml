@@ -34,8 +34,8 @@ jobs:
 
       # upload to release
       - name: Create release
-      - uses: softprops/action-gh-release@v1
-      - with:
+        uses: softprops/action-gh-release@v1
+        with:
           body_path: ${{ github.workspace }}-CHANGELOG.md
           files: Module.zip
       
