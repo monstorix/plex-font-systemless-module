@@ -40,7 +40,7 @@ Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
 > [!TIP]
 > 请仔细阅读各项介绍以及[附加说明](#附加说明)。本模块已固定配置文件的字体名称，以尽可能避免大量文件重命名操作，因此原模板说明中的字体重命名复制等方法**不适用于此处**。
 
-从 Release 中下载 Module.zip 文件，使用 Magisk 或 KernelSU 管理器安装并重启。
+从 Release 中下载 Module-Hinted.zip（或Module-Unhinted.zip） 文件，使用 Magisk 或 KernelSU 管理器安装并重启。<br>
 如需更改参数，请自行解压并编辑模块中的`/system/etc/font.xml`，同时将其内容覆盖复制至同目录与`/system/system_ext/etc`目录下的`font_base.xml`。
 
 ## 附加说明

@@ -40,8 +40,8 @@ Not tested on other ROM.<br><br>
 > [!TIP]
 > Please also read the [additional instructions](#Additional) of the original template. This module has fixed the font names in the configuration file to avoid as many file renaming operations as possible, so the methods of font renaming, copying etc. in the original template description **do not apply here**.
 
-Download the Module.zip file from the Release, install within Magisk or KernelSU Manager, then reboot.<br>
-To change the parameters, extract and edit `/system/etc/font.xml` in the module, and then copy it and overwrite the `font_base.xml` in the directory `/system/etc` and `/system/system_ext/etc`.
+Download the Module-Hinted.zip (or Module-Unhinted.zip) file from the Release, install within Magisk or KernelSU Manager, then reboot.<br>
+To change the font parameters, extract and edit `/system/etc/font.xml` in the module, and then copy it and overwrite the `font_base.xml` in the directory `/system/etc` and `/system/system_ext/etc`.
 
 ## Additional
 
