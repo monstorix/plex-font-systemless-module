@@ -8,11 +8,15 @@ This project attempts to apply IBM Plex fonts to the system global interface in 
 
 ## Module Support Status
 ### Tested on
-Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
-Status: <br>Native/System Interface is in effect (with Sans and Monospace). <br>**Pages in Webview are not fully in effect currently due to the new font rendering method on Android 12+**<br>
-Not tested on other ROM.<br><br>
+Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14<br><br>Redmi Note 7 Pro (violet) - CrDroid - Android 11<br>
+ | System Version | Native Interface | Webview-based Interface |
+ | ------- | ------ | -------- |
+ | Android 12+ |✅ In effect|Not fully in effect|
+ | Android 11 |✅ In effect|✅ In effect|
+
+Not tested on other ROM/System<br><br>
 > [!NOTE]
->For Chromium/Android Webview based browsers, it may be necessary to disable the Root Hide function, such as Magisk Hide/DenyList or KernelSU's "Uninstall Module" function, in order to make the font rules take effect on the webpage.<br>For Firefox Mobile and its derivatives, since the GeckoView engine has not yet been adapted to the system's font fallback mechanism, the module can only replace its interface fonts normally, and the webpage fonts will be messed up when the Root Hide is disabled, which is an upstream problem of the browser.
+> Android 12 and above uses new font rendering mechanism where fonts are loaded only when the app draws the interface. Therefore applications based on Web technologies are likely to be unaffected by module changes by default.<br><br>**For Chromium/Android Webview-based browsers and apps powered by them (e.g. Flutter apps):** <br>You need to individually disable the Root Hide function (e.g. Magisk Hide/DenyList or KernelSU's "Uninstall Module" function) for the relevant application, in order for the font rule to take effect on the web page.<br><br>**For Firefox Mobile (Fenix) and its derivatives:** <br>Since the GeckoView engine currently hardcodes the fonts used on the webpage in the browser configuration, and still does not adapt the font fallback function, the module can only replace its interface fonts. When Root Hide is disabled, the fonts of web pages will be mismatched and might have abnormal glyphs, which is an upstream issue.
 
 ### Supported Variants
  | Prefix | Languages | Status  |

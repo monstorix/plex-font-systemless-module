@@ -1,0 +1,7 @@
+id=PlexMaskMod
+name=IBM Plex 字体替换 (CJ Unhinted)
+version=0.4.240204-plex6.4
+versionCode=20
+author=Monstorix & lxgw & IBM
+description=将 Android 字体替换为 IBM Plex
+updateJson=https://github.com/monstorix/plex-font-systemless-module/raw/main/update-unhinted.json

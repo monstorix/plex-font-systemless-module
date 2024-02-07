@@ -8,11 +8,15 @@
 
 ## 模块支持状态
 ### 本地已测试环境
-Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14 / KernelSU<br><br>
-当前状态：<br>原生/系统界面已生效（无衬线/等宽）<br>**由于 Android 12 以上的新字体渲染机制，Webview 驱动的页面（如Flutter应用、公众号内文等）默认情况下未完全生效。**<br>
+Redmi K40 Pro (haydn) - LineageOS/CrDroid - Android 14<br><br>Redmi Note 7 Pro (violet) - CrDroid - Android 11<br>
+ | 系统版本 | 原生界面 | 基于 Webview 的界面 |
+ | ------- | ------ | -------- |
+ | Android 12+ |✅生效|未完全生效|
+ | Android 11 |✅生效|✅生效|
+
 其他ROM暂未测试<br><br>
 > [!NOTE]
-> 对于基于 Chromium/Android Webview 的浏览器应用，可能需要对其单独在设置中停用 Root 隐藏功能, 如Magisk Hide/DenyList或KernelSU的“卸载模块”功能，才能让字体规则在网页中生效。<br>对于 Firefox 移动版及其衍生版本，由于 GeckoView 引擎暂未适配系统字体回退机制，模块只能正常替换其界面字体，对其取消 Root 隐藏时，网页字体则会出现字形错乱等问题，此为浏览器上游问题。
+> Android 12及以上版本的系统采用了新的字体渲染机制，字体在应用绘制界面时才加载。因此基于 Web 技术的应用很可能在默认情况下无法被模块的更改影响。<br><br>**对于基于 Chromium/Android Webview 的浏览器和其驱动的应用（如Flutter应用）:** <br>需对相关应用单独停用 Root 隐藏功能, 如Magisk Hide/DenyList或KernelSU的“卸载模块”功能，才能让字体规则在网页中生效。<br><br>**对于 Firefox 移动版及其衍生版本:** <br>由于 GeckoView 引擎当前将网页所用字体当前硬编码列于浏览器配置中，仍然未适配字体回退功能，模块始终只能替换其界面字体。禁用 Root 隐藏时，网页字体会出现匹配错乱、字形异常等问题。此为上游设计缺陷问题。
 
 ### 当前支持的语言变体
  | 文件前缀 | 支持语族 | 状态  | 
